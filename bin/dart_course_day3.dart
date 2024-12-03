@@ -10,18 +10,15 @@
 //   for(int i=0; i<)
 // }
 
-
-
-void countLetters(String str){ 
-  Map<String, int> map = {}; 
-  str.replaceAll(" ", ""); 
-  for(int i=0; i<str.length; i++){ 
-    if(map.containsKey(str[i])){
+void countLetters(String str) {
+  Map<String, int> map = {};
+  str.replaceAll(" ", "");
+  for (int i = 0; i < str.length; i++) {
+    if (map.containsKey(str[i])) {
       map[str[i]] = map[str[i]]! + 1;
-        } else {
+    } else {
       map[str[i]] = 1;
-        }
-      }
-      print(map);
     }
-  
+  }
+  print(map);
+}
